@@ -1,6 +1,7 @@
 # C-DIY
 C++ library,sourecode and so on.
-这一套十分简洁的websocket server ,采用C++ 开发平台，无需任何安装任何三方库， 只需将lib,dll,h头文件引入工程即可使用
+这一套十分简洁的websocket server，,采用C++ 开发平台，无需任何安装任何三方库， 只需将lib,dll,h头文件引入工程即可使用
+使用方便，省心,省力：
 只需三步：
 1：  创建websocket server:
     pWebserver = CreateWebsockServer(9002);
@@ -9,6 +10,8 @@ C++ library,sourecode and so on.
 		std::bind(&CMFCDemoDlg::onWebsocket_msgdatarecevied, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3),
 		std::bind(&CMFCDemoDlg::onWebsocket_newconnected, this, std::placeholders::_1),
 		std::bind(&CMFCDemoDlg::onWebsocket_connectedclosed, this, std::placeholders::_1));
+		
+		
 3：启动webserver(用线程 ）：
     std::thread st([&]()->void {
 		startwebserver(pWebserver);
