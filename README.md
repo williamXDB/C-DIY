@@ -1,4 +1,4 @@
-# C-DIY
+# websocket server:
 C++ library,sourecode and so on.
 这一套十分简洁的websocket server，,采用C++ 开发平台，无需安装任何三方库， 只需将lib,dll,h头文件引入工程即可使用
 使用方便，省心,省力：
